@@ -1,0 +1,15 @@
+# Matikan Directory Browsing (Biar orang gak bisa liat daftar file kamu)
+Options -Indexes
+
+# Lindungi file konfigurasi
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Lindungi file log (jika ada)
+<Files "*.log">
+    Order Allow,Deny
+    Deny from all
+</Files>
+  
